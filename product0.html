@@ -1,0 +1,189 @@
+<html>
+<head>
+<title> dbtk </title>
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacts</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" type="image/x-icon" href="images/incons/favicon-removebg-preview.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<hr style="height:10px;border:none;color:#333;background-color:#333;"><br><br><br><br>
+<body>
+    <div class="ul_container">
+        <div class="logo_container"><img src="images/incons/dbtk_logo_black.avif" class="logo"></div>
+        <ul class="topnav">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="main.html#shop">Shop</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="FAQs.html">FAQ</a></li>
+            <li><a href="stockists.html">Stockist</a></li>
+            <li><a href="brand.html">Brand</a></li>
+            <li><a href="sizechart.html">Size Chart</a></li>
+            <li><a href="contacts.html">Contact</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </div>
+    <br><br><br><br>
+    <div class="container">
+        <div class="prod">
+            <img src="images/product/Artboard2_d0c7af39-1c06-44a9-bd5b-2c16851feb56_360x.jpg"">
+        </div>
+        <div class="info">
+            <h2>DBTK INT. TEE-ACID WASH BLACK</h2>
+            <p>P 1,000.00</p>
+            <p><small>size  </small></p>
+            <select>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="x-large">X-Large</option>
+
+            </select>
+            <p><small>Quantity  </small></p>
+            <select>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+
+
+            </select>
+            <br><br>    
+            <button onclick="added()" id="buton">
+                Sold Out
+            </button><br><br><br>
+            <p><small>Notify me when this product is available</small></p>
+            <div class="input-email">
+                <i class="fa fa-envelope icon"> </i>
+                <input type="text" class="input-field" placeholder="email@website.com">
+                <input type="submit" class="submit">
+              </div>
+            <div class="socials">
+                <a href="https://www.facebook.com/dbtkco"><img src="images/incons/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/dontblamethekids/?hl=en" id="on1"><img src="images/incons/insta.png" alt=""></a>
+                <a href="https://twitter.com/dbtkco?lang=en"><img src="images/incons/x.jpg" alt=""></a>
+
+                
+                
+            </div>
+        </div>
+    </div>
+<footer>
+    <h1>Newsletter</h1>
+    <center>
+      <div class="input-email">
+        <i class="fa fa-envelope icon"> </i>
+        <input type="text" class="input-field" placeholder="email@website.com">
+      </div>
+    </center>
+
+
+    <div class="ul_container">
+      <div class="logo_container"><img src="images/incons/dbtk_logo_black.avif" class="logo"></div>
+      <ul class="topnav" id="two">
+        <li><a href="main.html">Home</a></li>
+        <li><a href="main.html#shop">Shop</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="FAQs.html">FAQ</a></li>
+        <li><a href="stockists.html">Stockist</a></li>
+        <li><a href="brand.html">Brand</a></li>
+        <li><a href="sizechart.html">Size Chart</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+  </div>
+  <div class="message">
+  <p align="center" >Don't Blamce the Kids is a clothing brand that aims to change the mindset of people to kids around the world with its onpoint and straightforward message</p>
+
+  </div>
+
+
+  </footer>
+</body>
+<script>
+    
+    function added() {
+        var button = document.getElementById('buton');
+        button.innerHTML = 'Added';
+        button.disabled = true;
+    }
+</script>
+<style>
+    .disable {
+        opacity:0.5;
+        cursor: not-allowed;
+    }
+    .socials img {
+        width:35px;
+        border-radius: 100%;
+    }
+
+    .socials {
+        padding-top:50px;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width:150px
+    }
+    .submit {
+        border: 1px solid gray;
+        height:22px;
+        width:90px;
+        background-color: #33333300;
+    }
+    button {
+        border: 1px solid gray;
+        height: 50px;
+        width:150px;
+        background-color: rgba(255, 255, 255, 0);
+
+    }
+    select {
+        border: 1px solid gray;
+        height:30px;
+        width:90px;
+        margin-top: 0;
+        padding-top: 0  ;
+    }
+.container {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    width:80%;
+    margin-left: auto;
+    margin-right: auto ;
+}
+.prod img {
+    width:500px;
+}
+
+    li a {
+        color:black;
+    }
+    .main {
+        width: 60%;
+        display:block;
+        margin-left:auto;
+        margin-right: auto;
+    }
+    h1 {
+        text-align: center;
+    }
+    .description {
+        font-size:15px;
+    }
+    h2 {
+        font-size:20px;
+    }
+    .map {
+        width: 60%;     
+    }
+</style>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBTK</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" type="image/x-icon" href="images/incons/favicon-removebg-preview.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="inputs" align="center">
+        <h1>Login</h1>
+        <form action="main.html">
+            <div class="form-text">
+                <div class="text-in">
+                    <label>Email</label><br>
+                    <input type="email" placeholder="example@website.com">
+                </div>
+                <div class="text-in">
+                    <label>Password</label><br>
+                    <input type="password" id="password" placeholder="password1234">
+                    <i id="togglepassword" class="fa fa-eye password-icon"></i>
+                </div>
+            </div>
+            <div class="submit-form">
+                <input type="submit" value="Login">
+                <input type="reset" value="Cancel">
+
+            </div>
+        </form>
+    </div>
+
+</body>
+<style>
+    body {
+        background-image: url(images/background/Untitled\ design\ \(11\).png);
+        background-size:1536px 776px;
+
+        
+    }
+    .inputs {
+        margin-top: 250px;
+
+
+    }
+    .form-text {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .label {
+        padding-right:20px;
+            }
+    .text-in input {
+        background-color: rgba(255, 255, 255, 0);
+        height: 20px;
+        width:200px;
+    }
+    .h1 {
+        text-align: center;
+    }
+    .submit-form {
+        margin-top: 50px;
+        
+    }
+    .submit-form input {
+        width:150px;
+        height: 40px;
+        color:white;
+        background-color: black;
+        font-weight: bold;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    .password-icon {
+        position:absolute;
+        right:480px;
+        top:333px;
+        cursor:pointer;
+    }
+</style>
+<script>
+    let eyeicon = document.getElementById('togglepassword');
+    let password = document.getElementById('password');
+
+    eyeicon.onclick = function() {
+        if(password.type == "password"){
+            password.type = "text";
+        }
+        else {
+            password.type= "password";
+        }
+    }
+
+ </script>
+</html>
